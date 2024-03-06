@@ -1,0 +1,30 @@
+/* Responsive */
+@media (max-width: 720px) {
+  .logo-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .welcome-text {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  a.customer-nav-link {
+    display: block;
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  .btn-top-group.ml-auto {
+    margin-left: 0 !important;
+  }
+  /*  */
+  .custom-card h3 {
+    font-size: 1.5rem;
+  }
+  /*  */
+  .custom-tab .nav-tabs.nav-tabs-top {
+    flex-wrap: nowrap;
+    justify-content: start !important;
+    overflow: scroll;
+  }
+}

@@ -1,0 +1,28 @@
+$body-font: 'Open Sans', sans-serif;
+$helper-font: 'Quicksand', sans-serif;
+$anchor-color: #4d4d4d;
+$color-dark: #232323;
+$light-bg: #f0f0f0;
+$border-light: #ccc;
+
+// sunrise color scheme
+$sunrisePrimary: #ec1d25;
+$sunriseSecondary: #f9b913;
+$sunriseWelcome: #ffacad;
+$sunriseWelcomeText: #6d090b;
+
+// global ime bank theme
+$body-font: 'Open Sans', sans-serif;
+$helper-font: 'Quicksand', sans-serif;
+$globalPrimary: #456185;
+$globalSecondary: #c4151c;
+$gloablWelcome: #b3d5ff;
+$globalWelcomeText: #6d090b;
+
+// use this as a theme
+$body-font: 'Open Sans', sans-serif;
+$helper-font: 'Quicksand', sans-serif;
+$primaryColor: $globalPrimary;
+$secondaryColor: $globalSecondary;
+$welcomeColor: $gloablWelcome;
+$welcomeText: $globalWelcomeText;

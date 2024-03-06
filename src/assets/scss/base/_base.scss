@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto';
+
+  .selectize-input {
+    &:focus {
+      outline: none;
+    }
+
+    &.focus {
+      box-shadow: none;
+    }
+  }
+
+  .selectize-input.focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    @include border-radius(0);
+  }
+  label {
+    color: #363636;
+  }
+  .form-control {
+    height: auto;
+    padding: 12px 18px;
+    line-height: 1;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #a4a4a4;
+    border-radius: 8px;
+    font-size: 14px;
+    &:focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+  }
+
+  ::selection {
+    background-color: $primaryColor;
+    color: #fff;
+  }
+
+  .form-control,
+  .custom-select {
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-color: #ccc;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0.8rem;
+  }
+
+  textarea {
+    border-color: #ccc;
+
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-color: #ccc;
+      outline: none;
+    }
+  }
+
+  a {
+    color: #111;
+    @include transition(all, 0.5s, ease-in-out);
+
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  button {
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:active {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .btn {
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+// Extras
+.is-loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+.is-loading i {
+  color: #fff;
+}
+.body-overlay {
+  position: relative;
+}
+.body-overlay:before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 40px);
+  height: calc(100% + 38px);
+  z-index: 9;
+  margin: -18px -20px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.body-overlay-inner {
+  position: relative;
+}
+.body-overlay-inner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.alert.alert-danger.validation-error i {
+  display: none;
+}
+.alert.alert-danger.validation-error .float-right.btn.btn-default.btn-sm.btn-danger {
+  display: none;
+}
+.btn-modal {
+  text-transform: uppercase;
+  padding: 14px 35px;
+  color: #fff;
+  position: relative;
+  border: 3px solid #fff;
+  background: #456185;
+  background: -webkit-gradient(linear, left top, right top, from(#456185), to(#c4151c));
+  background: linear-gradient(to right, #456185 0%, #c4151c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$primaryColor",endColorstr="$secondaryColor",GradientType=1);
+}
+.btn-modal:hover {
+  color: #fff;
+}
